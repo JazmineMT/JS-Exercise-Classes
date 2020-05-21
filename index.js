@@ -145,17 +145,20 @@ class Lambdasian {
 */
 class Instructor extends Lambdasian {
   constructor(attributes) {
-    super(attributes);
-    this.name = attributes.name;
-    this.age = attributes.age;
-    this.location = attributes.location;
+    super(attributes)
     this.specialty = attributes.specialty;
     this.favLanguage = attributes.favLanguage;
     this.catchPhrase = attributes.catchPhrase;
 
   }
 
+  demo (subject) {
+    return  `Today we are learning about ${subject}`;
+  }
 
+  grade (student , subject) {
+    return `${student.name} recieves a perfect score on ${subject}`;
+  }
 }
 
 /*
