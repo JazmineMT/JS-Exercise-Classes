@@ -179,6 +179,7 @@ class Instructor extends Lambdasian {
 class Student extends Lambdasian {
   constructor(attributes) {
     super(attributes)
+      this.grade = Math.round(Math.random() * 100)
       this.previousBackground = attributes.previousBackground;  
       this.className = attributes.className;
       this.favSubjects = attributes.favSubjects ;
